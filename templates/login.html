@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>LOGIN</title>
+        <link rel="stylesheet" href="../css/login.css">
+    </head>
+
+    <body>
+        <img src="../images/loginbg.jfif" />
+        <main>
+
+
+            <form action="../php/authentication.php" method="post">
+                <h1>Enter Correct Credentials </h1>
+                <input name="userid" class="input" type="text" placeholder="User_id" required />
+                <input name="password" class="input" type="password" placeholder="Password" required />
+                <button class="loginbtn">Login</button>
+
+                <div class="register">
+                    <h5 style="
+    text-shadow: 0 0 3px black;
+                    ">
+                        Click Here To REGISTER!
+                    </h5>
+                    <button onclick="gotoregister()">
+                        REGISTER
+                    </button>
+
+                </div>
+            </form>
+        </main>
+        <script>
+            function gotoregister() {
+                location.href = '../templates/register.html';
+            }
+        </script>
+    </body>
+
+</html>

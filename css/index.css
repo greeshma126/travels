@@ -1,0 +1,589 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {}
+
+nav {
+  background: white;
+  display: flex;
+  justify-content: space-around;
+  height: 70px;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo_icon img {
+  width: 50px;
+  height: 50px;
+  border-radius: 20px;
+}
+
+.logo h1 {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0 0 0 0;
+  letter-spacing: 3px;
+}
+
+.logo h1:hover {
+  text-shadow: 0 0 5px gray;
+}
+
+.nav_links {
+  justify-content: space-around;
+  width: 600px;
+  display: flex;
+  width: 60%;
+  height: 60px;
+  align-items: center;
+}
+
+.nav_links li {
+  list-style: none;
+  width: 12%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 40px;
+  border-radius: 8px;
+}
+
+.nav_links li:hover {
+  background: lightpink;
+}
+
+.nav_links li a {
+  text-decoration: none;
+  letter-spacing: 1px;
+  color: grey;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.videotitle {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: whitesmoke;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  position: absolute;
+  transform: translateY(-100px);
+}
+
+/*  -----------------------    navigation end               ---------------------------- */
+
+/*  -----------------------    flight section start                 ---------------------------- */
+
+.flight_sec {
+  padding: 30px 0 0 0;
+  width: 100%;
+  height: 800px;
+  background: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0 0 0;
+}
+
+.best-flight-offer {
+  color: #3c3b3d;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  letter-spacing: 4px;
+  background-image: linear-gradient(to right, red, yellow);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 50px;
+  transform: translateY(30px);
+  opacity: 0;
+  transition: 0.5s all ease-in-out;
+}
+
+.best-flight-offer-activate {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.from_to_details {
+  width: 90%;
+}
+
+.flight_sec .from_to_details form {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 30px 0 0 0;
+}
+
+.flight_sec .from_to_details form input {
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  border-width: 1px;
+  padding: 5px;
+  box-shadow: 0px 0px 10px #3c3b3d;
+}
+
+.flight_sec .from_to_details button {
+  border: none;
+  width: 10%;
+  height: 30px;
+  border-radius: 4px;
+  box-shadow: 0px 0px 8px #3c3b3d;
+  background: lightseagreen;
+  outline: none;
+}
+
+.flight_offers {
+  margin: 50px 0 0 0;
+  padding: 50px 0 0 0;
+  width: 85%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.flight_offers .offers {
+  display: inline-block;
+  margin: 0 30px 0 30px;
+  border-radius: 10px;
+  width: 25%;
+  height: 300px;
+  box-shadow: 0px 0px 30px gray;
+}
+
+.flight_offers .offers img {
+  border-radius: 10px;
+  width: 100%;
+  height: 80%;
+}
+
+.offer-details {
+  width: 100%;
+  height: 20%;
+
+
+
+}
+
+
+
+
+.leftarrow {
+  position: absolute;
+  transform: translateX(-750px);
+  top: 1350px;
+  text-shadow: 0 0 5px black;
+}
+
+.rightarrow {
+  position: absolute;
+  transform: translateX(750px);
+  top: 1350px;
+  text-shadow: 0 0 5px black;
+}
+
+.view-all-btn {
+  color: whitesmoke;
+  background-color: #355c7d;
+  width: 100px;
+  height: 40px;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0px 0px 8px #3c3b3d;
+  outline: none;
+}
+
+.view-all-btn:hover {
+  background-color: #355c7d;
+  box-shadow: 0px 0px 8px black;
+}
+
+/*  -----------------------    flight section end                   ---------------------------- */
+
+/*  -----------------------    room section                ---------------------------- */
+
+.room {
+  width: 100%;
+  height: 720px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.roomtitle {
+  margin: 0 0 0 0;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 60px;
+  color: gray;
+  text-shadow: 0 0 15px gray;
+  letter-spacing: 3px;
+  height: 100px;
+  transform: translateY(30px);
+  opacity: 0;
+  transition: 0.5s all ease-in-out;
+}
+
+.roomtitle-active {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.room-list-slider {
+  width: 90%;
+  height: 60%;
+  overflow: hidden;
+}
+
+.rooms-slider {
+  display: inline-block;
+}
+
+.room-view-slider {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 10px 0 10px;
+}
+
+.room-view-slider .discription {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  flex-direction: column;
+  width: 50%;
+  height: 400px;
+}
+
+.room-view-slider .discription p {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 18px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding: 20px;
+
+  letter-spacing: 2px;
+}
+
+.room-view-slider .discription .btn button {
+  width: 300%;
+  height: 60px;
+  border-radius: 10px;
+  outline: none;
+  box-shadow: 0 0 20px gray;
+  background: lightblue;
+  border: none;
+}
+
+.room-view-slider .discription .btn button:hover {
+  box-shadow: 0 0 10px gray;
+}
+
+.room-view-slider img {
+  width: 400px;
+  height: 400px;
+}
+
+.room-list-nav {
+  width: 55%;
+  height: 25%;
+  overflow: hidden;
+}
+
+.rooms-nav {
+  display: inline-block;
+  overflow: hidden;
+  margin: 30px 0 0 0;
+}
+
+.room-view-nav {
+  overflow: hidden;
+
+  width: 90%;
+  height: 90%;
+}
+
+.room-view-nav img {
+  width: 300px;
+  height: 300px;
+}
+
+.prevroom {
+  position: absolute;
+  left: 300px;
+  transform: translateY(650px);
+  text-shadow: 0 0 10px gray;
+  z-index: 3;
+}
+
+.nextroom {
+  transform: translateY(650px);
+  position: absolute;
+  right: 300px;
+  text-shadow: 0 0 10px gray;
+  z-index: 3;
+}
+
+/*  -----------------------    room section end            ---------------------------- */
+
+/*  -----------------------    package section start                ---------------------------- */
+
+.package {
+  margin: 20px 0 0 0;
+  padding: 20px 0 0 0;
+  width: 100%;
+  height: 780px;
+}
+
+.package-title {
+  margin: 5px;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 60px;
+  color: gray;
+  text-shadow: 0 0 15px gray;
+  letter-spacing: 3px;
+  height: 100px;
+  transform: translateY(30px);
+  opacity: 0;
+  transition: 0.5s all ease-in-out;
+}
+
+.package-title-activate {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.package-list {
+  height: 600px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.package-list .view-package {
+  display: inline-block;
+  outline: none;
+  height: 600px;
+  width: 100%;
+}
+
+.packages {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  width: 90%;
+}
+
+.packages .package-discription {
+  width: 50%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 0 0 20px;
+}
+
+.packages .package-discription .info {
+  font-size: 18px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding: 20px;
+  margin: 30px 0 0 0px;
+  letter-spacing: 2px;
+}
+
+.packages .package-discription .bookbtn {
+  align-self: center;
+  justify-self: center;
+  width: 25%;
+  height: 40px;
+  margin: 30px 0 0 0;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 10px gray;
+  color: black;
+  background: cyan;
+  outline: none;
+  letter-spacing: 2px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bolder;
+}
+
+.packages .package-discription .bookbtn:hover {
+  box-shadow: 0 0 20px gray;
+}
+
+.packages .package-book {
+  height: 70%;
+  width: 40%;
+  box-shadow: 0 0 20px gray;
+  margin: -100px 0 0 30px;
+}
+
+.packages .package-book img {
+  width: 100%;
+  height: 80%;
+}
+
+.packages .package-book .Price {
+  margin: 20px;
+}
+
+.package .view-package .packages .prevpack {
+  color: gray;
+  transform: translateX(40px);
+  text-shadow: 0 0 5px black;
+}
+
+.package .view-package .packages .nextpack {
+  color: gray;
+  transform: translateX(1500px);
+  text-shadow: 0 0 5px black;
+}
+
+/*  -----------------------    package section end              ---------------------------- */
+
+/*  -----------------------    car section             ---------------------------- */
+
+.car {
+  width: 100%;
+  height: 720px;
+  background: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.car-title {
+  margin: 20px 0 0 0;
+  padding: 40px 0 0 0;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 60px;
+  color: gray;
+  text-shadow: 0 0 15px gray;
+  letter-spacing: 3px;
+  height: 100px;
+  transform: translateY(30px);
+  opacity: 0;
+  transition: 0.5s all ease-in-out;
+}
+
+.title-active {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.car-list {
+  padding: 0 20px 0 20px;
+  margin: 80px 0 0 0;
+  width: 90%;
+  height: 720px;
+
+  overflow: hidden;
+}
+
+.cars {
+  display: inline-block;
+  margin: 5px 30px 5px 30px;
+  box-shadow: 0 0 10px gray;
+}
+
+.display-car {}
+
+.display-car img {
+  width: 100%;
+  height: 300px;
+}
+
+.display-car .price h1 {
+  padding: 0 0 0 20px;
+}
+
+.car .prevcar {
+  position: absolute;
+  transform: translateX(-750px);
+  text-shadow: 0 0 5px black;
+  z-index: 3;
+}
+
+.car .nextcar {
+  position: absolute;
+  transform: translateX(750px);
+  text-shadow: 0 0 5px black;
+
+  z-index: 3;
+}
+
+/*  -----------------------    car section   end        ---------------------------- */
+
+/*  -----------------------    about-us section start            ---------------------------- */
+.About-us {
+  width: 100%;
+  height: 250px;
+  padding: 30px 0 0 0;
+  background: #283747;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: whitesmoke;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.designed-by,
+.contact,
+.social,
+.about {
+  width: 24%;
+  height: 240px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.5s all ease-in-out;
+}
+
+.activate {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.About-us .box h4 {
+  color: gray;
+  letter-spacing: 2px;
+}
+
+.About-us .box h5 {
+  margin: 10px 0 0 0;
+  color: gray;
+  letter-spacing: 2px;
+  font-size: 10px;
+}
+
+/*  -----------------------    about-us section end              ---------------------------- */

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>REGISTER</title>
+        <link rel="stylesheet" href="../css/register.css">
+
+    </head>
+
+    <body>
+        <main>
+
+            <form action="../php/register.php" method="post">
+                <h3>Enter your Details To Register</h3>
+                <input type="text" name="fullname" placeholder="Full name" required />
+                <input type="text" name="email" placeholder="Email" />
+                <input type="text" name="userid" placeholder="USer-id" required />
+                <input type="text" name="password" placeholder="Create-Passsword" required />
+                <input type="text" name="reenterpassowrd" placeholder="Re-Enter-Password" required />
+                <input type="number" name="phone" placeholder="Phone" required />
+                <input type="text" onfocus="(this.type='date')" onblur="if(!this.value)this.type='text'"
+                    placeholder="Date-Of-birth" name="dob" required>
+
+
+                <button type="submit" value="Submit">
+                    REGISTER
+                </button>
+
+            </form>
+
+
+        </main>
+
+
+
+
+
+    </body>
+
+</html>
